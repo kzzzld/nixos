@@ -58,7 +58,7 @@
     lua-language-server
 
     # AI
-    codex
+    opencode
 
     # internet
     gajim
