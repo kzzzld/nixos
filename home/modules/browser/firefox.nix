@@ -5,6 +5,8 @@
   ...
 }: let
   profileName = "default-release";
+  system = pkgs.stdenv.hostPlatform.system;
+  addons = inputs.firefox-addons.packages.${system};
 in {
   stylix.targets.firefox = {
     colorTheme.enable = true;
@@ -24,15 +26,22 @@ in {
 
       extensions = {
         force = true;
-        packages = with inputs.firefox-addons.packages.${pkgs.system}; [
-          ublock-origin
-          bitwarden
-          darkreader
-          sponsorblock
-          return-youtube-dislikes
-          clearurls
-          stylus
-        ];
+	packages =
+	  (with addons; [
+	    ublock-origin
+	    bitwarden
+	    darkreader
+	    sponsorblock
+	    return-youtube-dislikes
+	    clearurls
+	    stylus
+	    i-dont-care-about-cookies
+	  ])
+	  ++ [
+	    (addons.languagetool.overrideAttrs (old: {
+	      meta = old.meta // {license = [];};
+	    }))
+	  ];
       };
 
       settings = {
