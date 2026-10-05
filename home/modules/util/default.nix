@@ -1,4 +1,4 @@
-{ ... }: {
+{...}: {
   imports = [
     ./tmux.nix
     ./rbw.nix

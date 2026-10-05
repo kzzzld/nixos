@@ -26,22 +26,22 @@ in {
 
       extensions = {
         force = true;
-	packages =
-	  (with addons; [
-	    ublock-origin
-	    bitwarden
-	    darkreader
-	    sponsorblock
-	    return-youtube-dislikes
-	    clearurls
-	    stylus
-	    i-dont-care-about-cookies
-	  ])
-	  ++ [
-	    (addons.languagetool.overrideAttrs (old: {
-	      meta = old.meta // {license = [];};
-	    }))
-	  ];
+        packages =
+          (with addons; [
+            ublock-origin
+            bitwarden
+            darkreader
+            sponsorblock
+            return-youtube-dislikes
+            clearurls
+            stylus
+            i-dont-care-about-cookies
+          ])
+          ++ [
+            (addons.languagetool.overrideAttrs (old: {
+              meta = old.meta // {license = [];};
+            }))
+          ];
       };
 
       settings = {
