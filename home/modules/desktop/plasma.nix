@@ -64,6 +64,8 @@
       wallpaper = ../../walls/dark-forest.jpg;
     };
 
+    kscreenlocker.appearance.wallpaper = ../../walls/dark-forest.jpg;
+
     kwin.virtualDesktops = {
       number = 6;
       rows = 2;
