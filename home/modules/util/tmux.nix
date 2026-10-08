@@ -5,6 +5,7 @@
     baseIndex = 1;
     escapeTime = 0;
     keyMode = "vi";
+    mouse = true;
 
     plugins = with pkgs.tmuxPlugins; [
       sensible
@@ -42,6 +43,11 @@
       bind -T copy-mode-vi C-v send-keys -X rectangle-toggle
       bind -T copy-mode-vi y send-keys -X copy-selection-and-cancel
       bind -T copy-mode-vi Escape send-keys -X cancel
+
+      bind h select-pane -L
+      bind j select-pane -D
+      bind k select-pane -U
+      bind l select-pane -R
     '';
 
     terminal = "tmux-256color";

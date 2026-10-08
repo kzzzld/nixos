@@ -11,6 +11,7 @@
     ./modules/terminal
     ./modules/shell
     ./modules/util
+    ./modules/editor
     ./modules/browser
   ];
 
