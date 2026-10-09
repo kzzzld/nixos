@@ -6,7 +6,6 @@
 }: {
   imports = [
     ./modules/desktop
-    ./modules/theme
     ./modules/communication
     ./modules/terminal
     ./modules/shell
