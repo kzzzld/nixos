@@ -1,6 +1,6 @@
 {pkgs, lib, ...}: let
-  font = "ZedMono Nerd Font";
-  package = pkgs.nerd-fonts.zed-mono;
+  font = "Hack Nerd Font";
+  package = pkgs.nerd-fonts.hack;
 in {
   home.packages = [ package ];
   fonts.fontconfig.enable = true;
