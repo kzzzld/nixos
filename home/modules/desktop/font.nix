@@ -1,6 +1,6 @@
 {pkgs, lib, ...}: let
-  font = "JetBrainsMono Nerd Font";
-  package = pkgs.nerd-fonts.jetbrains-mono;
+  font = "IosevkaTerm Nerd Font";
+  package = pkgs.nerd-fonts.iosevka-term;
 in {
   home.packages = [ package ];
   fonts.fontconfig.enable = true;
