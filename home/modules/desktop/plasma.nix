@@ -14,15 +14,6 @@
     overrideConfig = true;
 
     configFile = {
-      # "kdeglobals"."General"."taskbarFont" = "Iosevka Nerd Font,11,-1,5,50,0,0,0,0,0";
-      kdeglobals.General.fixed = "Iosevka Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1";
-      kdeglobals.General.font = "Iosevka Nerd Font,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1";
-      kdeglobals.General.menuFont = "Iosevka Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1";
-      kdeglobals.General.smallestReadableFont = "Iosevka Nerd Font,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1";
-      kdeglobals.General.taskbarFont = "Iosevka Nerd Font,11,-1,5,50,0,0,0,0,0";
-      kdeglobals.General.toolBarFont = "Iosevka Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1";
-      kdeglobals.WM.activeFont = "Iosevka Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1";
-
       "breezerc"."Common" = {
         ShadowSize = "ShadowNone";
         ShadowStrength = 0;
