@@ -21,6 +21,23 @@ in {
     kdeglobals.WM.activeFont = lib.mkForce "${font},10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1";
   };
 
+    programs.vscode.userSettings = {
+      "editor.fontFamily" = lib.mkForce font;
+      "terminal.integrated.fontFamily" = lib.mkForce font;
+      "editor.inlayHints.fontFamily" = lib.mkForce font;
+      "workbench.fontFamily" = lib.mkForce font;
+    };
+
+  xdg.configFile."vesktop/settings/quickCss.css".text = ''
+    * {
+      font-family: "${font}" !important;
+    }
+
+    @font-face {
+      font-family: "${font}" !important;
+    }
+  '';
+
   stylix.fonts = {
     serif = {
       package = package;

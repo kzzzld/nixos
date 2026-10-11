@@ -3,13 +3,14 @@
   lib,
   ...
 }: {
-  programs.vscodium = {
+  programs.vscode = {
     enable = true;
     profiles.default = {
       extensions = with pkgs.vscode-extensions; [
         vscodevim.vim
         bbenoist.nix
         ms-python.python
+	ms-vscode-remote.remote-ssh
       ];
 
       userSettings = {
@@ -19,10 +20,6 @@
 
         "files.autoSave" = lib.mkForce "off";
 
-        "editor.fontFamily" = lib.mkForce "Iosevka Nerd Font";
-        "terminal.integrated.fontFamily" = lib.mkForce "Iosevka Nerd Font";
-        "editor.inlayHints.fontFamily" = lib.mkForce "Iosevka Nerd Font";
-        "workbench.fontFamily" = lib.mkForce "Iosevka Nerd Font";
         "window.titleBarStyle" = lib.mkForce "native";
         "window.menuBarVisibility" = lib.mkForce "toggle";
 

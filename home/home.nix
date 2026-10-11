@@ -12,6 +12,7 @@
     ./modules/util
     ./modules/editor
     ./modules/browser
+    ./modules/sync
   ];
 
   home = {
@@ -61,6 +62,8 @@
     opencode
 
     # internet
+    # NOTE: Brave is only here to use "Private Window with Tor". Tor Browser does not support ARM64 NixOS but Brave does it.
+    brave
     gajim
     signal-desktop
     thunderbird
@@ -68,6 +71,10 @@
     # games
     xonotic
     ddnet
+
+    # password namager
+    # NOTE: I use Bitwarden but keep KeePassXC for other things.
+    keepassxc
 
     # office
     libreoffice-stable

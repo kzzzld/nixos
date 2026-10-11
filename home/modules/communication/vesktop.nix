@@ -16,14 +16,4 @@
       };
     };
   };
-
-  xdg.configFile."vesktop/settings/quickCss.css".text = ''
-    * {
-      font-family: "Iosevka Nerd Font" !important;
-    }
-
-    @font-face {
-      font-family: "Iosevka Nerd Font" !important;
-    }
-  '';
 }
