@@ -16,7 +16,7 @@ My own NixOS configuration.
 > You should not use hardware-configuration.nix blindly.
 
 ```bash
-git clone https://git.kzzzl.xyz/kzzzl/flake ~/flake
+git clone https://github.com/kzzzld/nixos ~/flake
 cd ~/flake
 
 # for nixmac-btw
